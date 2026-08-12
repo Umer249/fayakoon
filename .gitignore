@@ -1,0 +1,9 @@
+node_modules
+client/node_modules
+client/dist
+.env
+*.log
+.DS_Store
+pdf_extract_rest.txt
+assets_tmp
+extract_assets.py

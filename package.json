@@ -1,0 +1,19 @@
+{
+  "name": "fayakoon",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm run dev --prefix client",
+    "server": "node server/index.js",
+    "build": "npm run build --prefix client",
+    "start": "node server/index.js",
+    "install:all": "npm install && npm install --prefix client"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "concurrently": "^9.1.2"
+  }
+}
