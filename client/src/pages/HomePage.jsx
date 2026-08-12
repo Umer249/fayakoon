@@ -1,21 +1,19 @@
 import Hero from '../components/Hero'
+import Introduction from '../components/Introduction'
+import Mission from '../components/Mission'
+import Ceo from '../components/Ceo'
 import Clients from '../components/Clients'
 import Projects from '../components/Projects'
-import Gallery from '../components/Gallery'
 import { Link } from 'react-router-dom'
 import { ArrowUpRight } from 'lucide-react'
-import { gallery } from '../data/company'
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <Gallery
-        images={gallery}
-        title="Recent field work"
-        eyebrow="On site"
-        limit={8}
-      />
+      <Introduction />
+      <Mission />
+      <Ceo />
       <Clients />
       <Projects />
       <section className="section-pad border-t border-mist/10 py-20">

@@ -1,4 +1,5 @@
-import About from '../components/About'
+import Introduction from '../components/Introduction'
+import Mission from '../components/Mission'
 import Ceo from '../components/Ceo'
 import Quality from '../components/Quality'
 import Leadership from '../components/Leadership'
@@ -28,7 +29,8 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <About />
+      <Introduction />
+      <Mission />
       <Ceo />
       <Gallery
         images={fieldImages.slice(55, 67)}

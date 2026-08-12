@@ -28,7 +28,7 @@ export const company = {
 export const intro = {
   paragraphs: [
     'Fayakoon is committed to understanding client needs and exceeding expectations. We collaborate closely with our clients and supply chain to deliver high-quality, cost-effective civil engineering and communication projects.',
-    'With over two decades of experience, Fayakoon has built a strong presence in both construction and national trade. Our ventures also span pipe manufacturing, hospitality, housing development, and fuel retail.',
+    'With over two decades of experience, Fayakoon has built a strong presence in both construction and national trade. Our ventures also span across industries—pipe manufacturing, hospitality, housing development, and fuel retail.',
     'Our strength lies in our dedicated team, in-house expertise, and the group’s owned fleet and equipment, allowing rapid mobilization and flexibility. Operating from offices across Pakistan, we lead in civil engineering, communication, and trading.',
     'Sustainable growth remains at the heart of Fayakoon’s journey. Backed by financial strength and a solid 20+ year legacy, we continue to balance social, environmental, and economic responsibility in all we do.',
   ],
@@ -43,15 +43,15 @@ export const ceoMessage = {
   principles: [
     {
       title: 'Talented People',
-      text: 'Our diverse and dedicated team is the foundation of our success—from the field to senior leadership.',
+      text: 'Our diverse and dedicated team is the foundation of our success. From the field to senior leadership, we are committed to excellence.',
     },
     {
       title: 'Community Commitment',
-      text: 'We work closely with public and private sectors to deliver meaningful, lasting impact.',
+      text: 'We value the communities we serve and work closely with public and private sectors to deliver meaningful, lasting impact.',
     },
     {
       title: 'Honest Perspective',
-      text: 'We build strong relationships by understanding needs and offering clear solutions with integrity.',
+      text: 'We build strong relationships by understanding our clients’ needs and offering clear, effective solutions with integrity.',
     },
   ],
   closing:
@@ -62,11 +62,14 @@ export const ceoMessage = {
 }
 
 export const mission = [
-  'Uphold the highest standards of professionalism, integrity, honesty, and fairness with suppliers, partners, and customers.',
-  'Earn sustained growth through repeated trust—exceeding expectations in timeliness, innovation, precision, and service.',
-  'Deliver products and experiences of the finest quality, grounded in creativity, purpose, and competitive value.',
-  'Foster transparency, inspiration, and collective growth so every team member can contribute with ownership and excellence.',
+  'To uphold the highest standards of professionalism, integrity, honesty, and fairness in all our relationships—with suppliers, partners, collaborators, and customers alike.',
+  'To ensure the sustained growth and reputation of Fayakoon through repeated trust and referrals, earned by exceeding expectations in every aspect—timeliness, innovation, precision, and a service-oriented approach.',
+  'To deliver products and experiences of the finest quality, grounded in creativity, purpose, and value, while remaining competitive in an ever-evolving global market.',
+  'To foster an environment of transparency, inspiration, and collective growth for our team—where each member is empowered to contribute with passion, ownership, and excellence.',
 ]
+
+export const missionClosing =
+  'Through this shared commitment, Fayakoon will not only establish itself as a leading force in its industry but strive to become the defining name across global creative and experiential landscapes.'
 
 export const services = [
   {
@@ -213,19 +216,24 @@ export const projects = [
 ]
 
 export const clients = [
-  'Multinet',
-  'Byco Petroleum',
-  'Engro',
-  'Telenor',
-  'Wateen Telecom',
-  'Mari Gas',
-  'PPL',
-  'Fauji Fertilizer',
-  'Unilever',
-  'CNCEC',
-  'MGCL',
-  'Askari Bank',
-  'Abbas Cement',
+  { name: 'Engro', logo: '/images/clients/engro.jpg' },
+  { name: 'CNCEC', logo: '/images/clients/cncec.jpg' },
+  { name: 'Fauji Fertilizer Company', logo: '/images/clients/ffc.jpg' },
+  {
+    name: 'Housing, Urban Development & Public Health Engineering Department',
+    logo: '/images/clients/phied.jpg',
+  },
+  { name: 'Agriculture Department', logo: '/images/clients/agriculture.jpg' },
+  { name: 'Government of Sindh', logo: '/images/clients/sindh.jpg' },
+  { name: 'Wateen Telecom', logo: '/images/clients/wateen.jpg' },
+  { name: 'Frontier Works Organization', logo: '/images/clients/fwo.jpg' },
+  { name: 'National Highway Authority', logo: '/images/clients/nha.jpg' },
+  { name: 'DHA Lahore', logo: '/images/clients/dha-lahore.jpg' },
+  { name: 'Mari Petroleum Company Limited', logo: '/images/clients/mpcl.jpg' },
+  { name: 'Doosan', logo: '/images/clients/doosan.jpg' },
+  { name: 'Byco Petroleum', logo: '/images/clients/byco.jpg' },
+  { name: 'Power & Energy Partners', logo: '/images/clients/power.jpg' },
+  { name: 'Multinet', logo: '/images/clients/multinet.jpg' },
 ]
 
 export const leadership = [
