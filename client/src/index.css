@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Barlow Condensed", sans-serif;
-  --font-sans: "Manrope", sans-serif;
-  --color-ink: #0b1412;
-  --color-ink-soft: #15221e;
-  --color-forest: #1a3a32;
-  --color-moss: #2f5a4c;
-  --color-mist: #d8e4df;
-  --color-sand: #f3eee4;
-  --color-copper: #c67a2f;
-  --color-copper-bright: #e0973d;
-  --color-steel: #8aa39a;
+  --font-display: "Open Sans", sans-serif;
+  --font-sans: "Open Sans", sans-serif;
+  --color-ink: #041e42;
+  --color-ink-soft: #010812;
+  --color-forest: #073472;
+  --color-moss: #46c2ca;
+  --color-mist: #dcdde1;
+  --color-sand: #ffffff;
+  --color-copper: #ed1c24;
+  --color-copper-bright: #e53d1b;
+  --color-steel: #666666;
 }
 
 @layer base {
@@ -20,16 +20,12 @@
   }
 
   body {
-    @apply bg-ink text-mist font-sans antialiased;
-    background-image:
-      radial-gradient(ellipse 80% 50% at 10% -10%, rgba(198, 122, 47, 0.12), transparent 55%),
-      radial-gradient(ellipse 60% 40% at 90% 0%, rgba(47, 90, 76, 0.35), transparent 50%),
-      linear-gradient(180deg, #0b1412 0%, #0f1c19 40%, #0b1412 100%);
+    @apply bg-white text-ink font-sans antialiased;
     min-height: 100vh;
   }
 
   ::selection {
-    background: rgba(198, 122, 47, 0.35);
+    background: rgba(237, 28, 36, 0.35);
     color: #fff;
   }
 }
@@ -45,19 +41,29 @@
 
   .display {
     font-family: var(--font-display);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
   }
 
   .grid-lines {
     background-image:
-      linear-gradient(rgba(216, 228, 223, 0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(216, 228, 223, 0.04) 1px, transparent 1px);
+      linear-gradient(rgba(220, 221, 225, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(220, 221, 225, 0.05) 1px, transparent 1px);
     background-size: 48px 48px;
   }
 
   .mask-fade-b {
     mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+  }
+
+  /* Keep text readable on light backgrounds */
+  .bg-white [class*='text-sand'],
+  .bg-white [class*='text-mist'],
+  .bg-sand [class*='text-sand'],
+  .bg-sand [class*='text-mist'],
+  .bg-\[\#eff3f6\] [class*='text-sand'],
+  .bg-\[\#eff3f6\] [class*='text-mist'] {
+    color: var(--color-ink) !important;
   }
 }
 

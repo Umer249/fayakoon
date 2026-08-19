@@ -40,24 +40,24 @@ export default function Contact() {
 
   return (
     <section className="section-pad py-16 lg:py-20">
-      <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-12">
+      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-12 lg:gap-14">
         <div className="lg:col-span-5">
-          <p className="text-mist/75 leading-relaxed">
-            Reach our offices nationwide—or send an inquiry and the Fayakoon team will
+          <p className="text-steel leading-relaxed">
+            Reach our offices nationwide, or send an inquiry and the Fayakoon team will
             follow up.
           </p>
 
           <div className="mt-10 space-y-4 text-sm">
             <a
               href={`mailto:${company.email}`}
-              className="flex items-center gap-3 text-sand transition hover:text-copper-bright"
+              className="flex items-center gap-3 text-ink transition hover:text-copper-bright"
             >
               <Mail size={16} className="text-copper" />
               {company.email}
             </a>
             <a
               href={`tel:${company.phone.replace(/\s/g, '')}`}
-              className="flex items-center gap-3 text-sand transition hover:text-copper-bright"
+              className="flex items-center gap-3 text-ink transition hover:text-copper-bright"
             >
               <Phone size={16} className="text-copper" />
               {company.phone} · {company.phoneAlt}
@@ -66,7 +66,7 @@ export default function Contact() {
               href={`https://${company.website}`}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-3 text-sand transition hover:text-copper-bright"
+              className="flex items-center gap-3 text-ink transition hover:text-copper-bright"
             >
               <Globe size={16} className="text-copper" />
               {company.website}
@@ -76,12 +76,12 @@ export default function Contact() {
           <div className="mt-12 space-y-6">
             {offices.map((office) => (
               <div key={office.city} className="border-l border-mist/20 pl-4">
-                <h3 className="display text-2xl text-sand">{office.city}</h3>
-                <p className="mt-2 flex gap-2 text-sm text-mist/70">
+                <h3 className="display text-2xl text-ink">{office.city}</h3>
+                <p className="mt-2 flex gap-2 text-sm text-steel">
                   <MapPin size={14} className="mt-0.5 shrink-0 text-copper" />
                   {office.address}
                 </p>
-                <p className="mt-1 text-sm text-mist/80">{office.phones.join(' · ')}</p>
+                <p className="mt-1 text-sm text-steel">{office.phones.join(' · ')}</p>
               </div>
             ))}
           </div>
@@ -122,7 +122,7 @@ export default function Contact() {
               rows={6}
               value={form.message}
               onChange={onChange}
-              className="w-full border border-mist/15 bg-ink-soft/80 px-4 py-3 text-sand outline-none transition focus:border-copper"
+              className="w-full border border-ink bg-white px-4 py-3 text-ink outline-none transition focus:border-copper"
             />
           </div>
           <button
@@ -136,7 +136,7 @@ export default function Contact() {
           {status.text && (
             <p
               className={`text-sm ${
-                status.type === 'ok' ? 'text-mist' : 'text-red-300'
+                status.type === 'ok' ? 'text-ink' : 'text-red-600'
               }`}
             >
               {status.text}
@@ -160,7 +160,7 @@ function Field({ label, name, value, onChange, type = 'text', required }) {
         value={value}
         onChange={onChange}
         required={required}
-        className="w-full border border-mist/15 bg-ink-soft/80 px-4 py-3 text-sand outline-none transition focus:border-copper"
+        className="w-full border border-ink bg-white px-4 py-3 text-ink outline-none transition focus:border-copper"
       />
     </div>
   )

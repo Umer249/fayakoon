@@ -24,7 +24,7 @@ export default function AboutPage() {
             About Fayakoon
           </h1>
           <p className="mt-4 max-w-2xl text-mist/75">
-            Engineering and construction excellence since 1994—built on talent, community
+            Engineering and construction excellence since 1994, built on talent, community
             commitment, and honest delivery.
           </p>
         </div>

@@ -1,4 +1,4 @@
-# Fayakoon Engineering — Company Website
+# Fayakoon Engineering - Company Website
 
 React + Node.js website built from the **Fayakoon Company Profile 2026** PDF.
 
@@ -9,10 +9,10 @@ React + Node.js website built from the **Fayakoon Company Profile 2026** PDF.
 
 ## Pages
 
-- `/` — Home
-- `/about` — About
-- `/services` — Services
-- `/contact` — Contact
+- `/` - Home
+- `/about` - About
+- `/services` - Services
+- `/contact` - Contact
 
 ## Setup
 

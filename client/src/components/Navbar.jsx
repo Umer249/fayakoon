@@ -1,76 +1,91 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Facebook, Linkedin, Mail, Menu, Phone, X } from 'lucide-react'
 import { company } from '../data/company'
 
 const links = [
   { to: '/', label: 'Home', end: true },
-  { to: '/about', label: 'About' },
-  { to: '/services', label: 'Services' },
+  { to: '/about', label: 'About Us' },
+  { to: '/services', label: 'Products & Services' },
   { to: '/contact', label: 'Contact' },
 ]
 
-const linkClass = ({ isActive }) =>
-  `text-xs font-semibold uppercase tracking-[0.22em] transition ${
-    isActive ? 'text-copper-bright' : 'text-mist/75 hover:text-copper-bright'
+const navLinkClass = ({ isActive }) =>
+  `px-3 xl:px-4 py-4 text-xs font-semibold uppercase tracking-[0.14em] transition ${
+    isActive ? 'text-copper' : 'text-sand/90 hover:text-copper'
   }`
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24)
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
 
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? 'bg-ink/90 backdrop-blur-md border-b border-mist/10'
-          : 'bg-transparent'
-      }`}
-    >
-      <div className="section-pad flex h-16 items-center justify-between lg:h-20">
-        <Link to="/" className="group flex items-baseline gap-2">
-          <span className="display text-2xl font-bold tracking-[0.08em] text-sand sm:text-3xl">
-            FAYAKOON
-          </span>
-          <span className="hidden text-[10px] uppercase tracking-[0.28em] text-steel sm:inline">
-            Engineering
-          </span>
-        </Link>
+    <header className="sticky top-0 z-50 border-b border-ink/10 bg-white shadow-sm">
+      <div className="bg-ink text-sand">
+        <div className="section-pad mx-auto flex max-w-7xl items-center justify-between gap-3 py-2 text-[11px] sm:text-xs">
+          <div className="flex items-center gap-3">
+            <a
+              href="https://www.facebook.com/fayakoongroup/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-copper"
+            >
+              <Facebook size={14} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/fayakoon-group-012379195/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-copper"
+            >
+              <Linkedin size={14} />
+            </a>
+          </div>
+          <p className="hidden items-center gap-2 truncate md:flex">
+            <Mail size={13} />
+            <span className="truncate">{company.email}</span>
+            <span className="text-mist/40">|</span>
+            <Phone size={13} />
+            {company.landline}
+          </p>
+          <p className="flex items-center gap-2 md:hidden">
+            <Phone size={13} />
+            {company.landline}
+          </p>
+        </div>
+      </div>
 
-        <nav className="hidden items-center gap-8 lg:flex">
-          {links.map((link) => (
-            <NavLink key={link.to} to={link.to} end={link.end} className={linkClass}>
-              {link.label}
-            </NavLink>
-          ))}
-          <Link
-            to="/contact"
-            className="rounded-sm bg-copper px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-ink transition hover:bg-copper-bright"
-          >
-            Inquire
+      <div className="bg-white">
+        <div className="section-pad mx-auto flex max-w-7xl items-center justify-between py-3 lg:py-4">
+          <Link to="/" className="shrink-0">
+            <img
+              src="/images/brand/fayakoon-logo.png"
+              alt="Fayakoon"
+              className="h-9 w-auto object-contain sm:h-10 lg:h-11"
+            />
           </Link>
-        </nav>
 
-        <button
-          type="button"
-          className="inline-flex rounded-sm border border-mist/20 p-2 text-sand lg:hidden"
-          aria-label="Toggle menu"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X size={20} /> : <Menu size={20} />}
-        </button>
+          <nav className="hidden items-center lg:flex">
+            {links.map((link) => (
+              <NavLink key={link.to} to={link.to} end={link.end} className={navLinkClass}>
+                {link.label}
+              </NavLink>
+            ))}
+          </nav>
+
+          <button
+            type="button"
+            className="inline-flex rounded border border-ink/15 p-2 text-ink lg:hidden"
+            aria-label="Toggle menu"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
       </div>
 
       {open && (
-        <div className="border-t border-mist/10 bg-ink/95 px-5 py-6 backdrop-blur-md lg:hidden">
-          <div className="flex flex-col gap-4">
+        <div className="border-t border-ink/10 bg-white px-5 py-4 lg:hidden">
+          <div className="flex flex-col">
             {links.map((link) => (
               <NavLink
                 key={link.to}
@@ -78,13 +93,20 @@ export default function Navbar() {
                 end={link.end}
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
-                  `display text-2xl ${isActive ? 'text-copper-bright' : 'text-sand'}`
+                  `py-3 text-sm font-semibold uppercase tracking-[0.14em] ${
+                    isActive ? 'text-copper' : 'text-ink'
+                  }`
                 }
               >
                 {link.label}
               </NavLink>
             ))}
-            <p className="pt-2 text-sm text-steel">{company.email}</p>
+            <a
+              href={`mailto:${company.email}`}
+              className="pt-3 text-xs text-steel"
+            >
+              {company.email}
+            </a>
           </div>
         </div>
       )}

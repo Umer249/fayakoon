@@ -3,9 +3,9 @@ import { leadership, stats, company } from '../data/company'
 
 export default function Leadership() {
   return (
-    <section id="team" className="border-y border-mist/10 bg-forest/30">
+    <section id="team" className="border-y border-mist/20 bg-[#eff3f6]">
       <div className="section-pad mx-auto max-w-7xl py-24 lg:py-28">
-        <div className="grid grid-cols-2 gap-6 border-b border-mist/10 pb-12 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-6 border-b border-mist/40 pb-12 sm:grid-cols-4">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -14,7 +14,7 @@ export default function Leadership() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.06 }}
             >
-              <div className="display text-4xl font-semibold text-sand sm:text-5xl">
+              <div className="display text-4xl font-semibold text-ink sm:text-5xl">
                 {stat.value}
               </div>
               <div className="mt-1 text-[11px] uppercase tracking-[0.22em] text-steel">
@@ -29,13 +29,13 @@ export default function Leadership() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper">
               People
             </p>
-            <h2 className="display mt-4 text-5xl font-bold text-sand sm:text-6xl">
+            <h2 className="display mt-4 text-5xl font-bold text-ink sm:text-6xl">
               Leadership Team
             </h2>
           </div>
-          <p className="max-w-md text-sm text-mist/70">
+          <p className="max-w-md text-sm text-steel">
             Experienced specialists across projects, quality, EHS, finance, and field
-            operations—led by {company.ceo}.
+            operations, led by {company.ceo}.
           </p>
         </div>
 
@@ -47,9 +47,9 @@ export default function Leadership() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.03 }}
-              className="border border-mist/10 bg-ink/40 px-5 py-4"
+              className="border border-mist/40 bg-white px-5 py-4"
             >
-              <h3 className="font-semibold text-sand">{person.role}</h3>
+              <h3 className="font-semibold text-ink">{person.role}</h3>
               <p className="mt-2 text-xs uppercase tracking-[0.16em] text-steel">
                 {person.quals} · {person.experience}
               </p>

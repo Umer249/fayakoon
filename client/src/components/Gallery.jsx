@@ -26,8 +26,8 @@ export default function Gallery({
         <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper">
           {eyebrow}
         </p>
-        <h2 className="display mt-4 text-5xl font-bold text-sand sm:text-6xl">{title}</h2>
-        <p className="mt-3 max-w-xl text-sm text-mist/70">
+        <h2 className="display mt-4 text-5xl font-bold text-ink sm:text-6xl">{title}</h2>
+        <p className="mt-3 max-w-xl text-sm text-steel">
           Documented field operations across fiber corridors, civil trenching, HDD, and
           utility installation.
         </p>

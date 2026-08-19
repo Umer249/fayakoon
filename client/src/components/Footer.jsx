@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { company } from '../data/company'
+import { company, homeAbout } from '../data/company'
 
 const links = [
   { to: '/', label: 'Home' },
@@ -10,36 +10,56 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-mist/10 bg-ink">
-      <div className="section-pad mx-auto flex max-w-7xl flex-col gap-8 py-12 lg:flex-row lg:items-end lg:justify-between">
-        <div>
-          <Link to="/" className="display text-4xl font-bold text-sand hover:text-copper-bright">
-            FAYAKOON
-          </Link>
-          <p className="mt-2 max-w-md text-sm text-mist/60">
-            {company.name} · PEC {company.pec} · NTN {company.ntn}
-          </p>
-          <nav className="mt-5 flex flex-wrap gap-4">
-            {links.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="text-[11px] font-semibold uppercase tracking-[0.2em] text-mist/55 transition hover:text-copper-bright"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+    <footer>
+      <div className="grid gap-px bg-mist/30 md:grid-cols-3">
+        <div className="bg-ink p-8 text-center text-sand">
+          <p className="text-xs font-bold uppercase tracking-[0.18em]">Call Us Now</p>
+          <p className="mt-3 text-sm">{company.landline}</p>
         </div>
-        <div className="text-sm text-mist/55">
-          <p>
-            <a href={`mailto:${company.email}`} className="hover:text-copper-bright">
+        <div className="bg-ink p-8 text-center text-sand">
+          <p className="text-xs font-bold uppercase tracking-[0.18em]">Come Visit Us</p>
+          <p className="mt-3 text-sm">
+            Building No.14, Khuwaja Bungalows Commercial Area, Abbasia Town, Rahim Yar Khan
+          </p>
+        </div>
+        <div className="bg-ink p-8 text-center text-sand">
+          <p className="text-xs font-bold uppercase tracking-[0.18em]">Send Us A Message</p>
+          <p className="mt-3 text-sm">
+            <a href={`mailto:${company.email}`} className="hover:text-moss">
               {company.email}
             </a>
           </p>
-          <p className="mt-1">
-            © {new Date().getFullYear()} Fayakoon Engineering Pvt. Ltd. All rights reserved.
-          </p>
+        </div>
+      </div>
+
+      <div className="border-t border-mist/20 bg-white py-12">
+        <div className="section-pad mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
+          <div>
+            <Link to="/" className="inline-block">
+              <img
+                src="/images/brand/fayakoon-logo.png"
+                alt="Fayakoon"
+                className="h-10 w-auto object-contain"
+              />
+            </Link>
+            <p className="mt-4 max-w-md text-sm text-steel">{homeAbout}</p>
+            <nav className="mt-5 flex flex-wrap gap-4">
+              {links.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className="text-[11px] font-semibold uppercase tracking-[0.2em] text-steel transition hover:text-copper"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+          <div className="text-sm text-steel">
+            <p>{company.name}</p>
+            <p className="mt-1">PEC {company.pec} · NTN {company.ntn}</p>
+            <p className="mt-4">© {new Date().getFullYear()} All Rights Reserved.</p>
+          </div>
         </div>
       </div>
     </footer>

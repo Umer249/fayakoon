@@ -28,7 +28,7 @@ export const company = {
 export const intro = {
   paragraphs: [
     'Fayakoon is committed to understanding client needs and exceeding expectations. We collaborate closely with our clients and supply chain to deliver high-quality, cost-effective civil engineering and communication projects.',
-    'With over two decades of experience, Fayakoon has built a strong presence in both construction and national trade. Our ventures also span across industries—pipe manufacturing, hospitality, housing development, and fuel retail.',
+    'With over two decades of experience, Fayakoon has built a strong presence in both construction and national trade. Our ventures also span across industries, pipe manufacturing, hospitality, housing development, and fuel retail.',
     'Our strength lies in our dedicated team, in-house expertise, and the group’s owned fleet and equipment, allowing rapid mobilization and flexibility. Operating from offices across Pakistan, we lead in civil engineering, communication, and trading.',
     'Sustainable growth remains at the heart of Fayakoon’s journey. Backed by financial strength and a solid 20+ year legacy, we continue to balance social, environmental, and economic responsibility in all we do.',
   ],
@@ -37,7 +37,7 @@ export const intro = {
 export const ceoMessage = {
   greeting: 'Greetings,',
   body: [
-    'As I reflect on our journey since Fayakoon’s inception in 1994, I feel immense pride in how far we’ve come—and even greater optimism for the future. What began as a small construction startup has grown into a trusted group of companies with a nationwide presence and a strong reputation built on reliability, quality, and client trust.',
+    'As I reflect on our journey since Fayakoon’s inception in 1994, I feel immense pride in how far we’ve come, and even greater optimism for the future. What began as a small construction startup has grown into a trusted group of companies with a nationwide presence and a strong reputation built on reliability, quality, and client trust.',
     'It is especially fulfilling to know that our work helps clients operate critical areas of their businesses more efficiently and cost-effectively. At Fayakoon, client satisfaction is the benchmark by which we measure our success, and we hold ourselves to the highest standards of service and quality.',
   ],
   principles: [
@@ -62,14 +62,90 @@ export const ceoMessage = {
 }
 
 export const mission = [
-  'To uphold the highest standards of professionalism, integrity, honesty, and fairness in all our relationships—with suppliers, partners, collaborators, and customers alike.',
-  'To ensure the sustained growth and reputation of Fayakoon through repeated trust and referrals, earned by exceeding expectations in every aspect—timeliness, innovation, precision, and a service-oriented approach.',
+  'To uphold the highest standards of professionalism, integrity, honesty, and fairness in all our relationships, with suppliers, partners, collaborators, and customers alike.',
+  'To ensure the sustained growth and reputation of Fayakoon through repeated trust and referrals, earned by exceeding expectations in every aspect, timeliness, innovation, precision, and a service-oriented approach.',
   'To deliver products and experiences of the finest quality, grounded in creativity, purpose, and value, while remaining competitive in an ever-evolving global market.',
-  'To foster an environment of transparency, inspiration, and collective growth for our team—where each member is empowered to contribute with passion, ownership, and excellence.',
+  'To foster an environment of transparency, inspiration, and collective growth for our team, where each member is empowered to contribute with passion, ownership, and excellence.',
 ]
 
 export const missionClosing =
   'Through this shared commitment, Fayakoon will not only establish itself as a leading force in its industry but strive to become the defining name across global creative and experiential landscapes.'
+
+export const homeSlides = [
+  {
+    image: '/images/official/hse-2.jpg',
+    title: 'FAYAKOON ENGINEERING (PVT) LTD',
+  },
+  {
+    image: '/images/official/BMS-Pic.jpg',
+    title: 'TYME TRADING CONCEPTS (PVT) LTD',
+  },
+  {
+    image: '/images/official/big-pic-oil.jpg',
+    title: 'FAYAKOON PETROLEUM (PVT) LTD',
+  },
+]
+
+export const homeValues = [
+  {
+    title: 'Quality Driven',
+    text: 'To Ensure High Quality Product & Services to Our Value Clients With Comply of ISO Standards Are Our First Priority.',
+  },
+  {
+    title: 'Customer Focused',
+    text: 'Our Clients Are Our Pride, It Can Not Be Compromise.',
+  },
+  {
+    title: 'HSE Policy',
+    text: 'We Are Strict To Employ Our HSE Policy With All Measures of Implementation To Protect & Safeguard Our Human Resource, Environment And Country Assets.',
+  },
+]
+
+export const homeAbout =
+  'Fayakoon Group is Pakistan’s emerging engineering, trading and service provider group of companies engaged in the businesses of constructions, petroleum, fiber optic, logistic services and communication services.'
+
+export const homeServices = [
+  {
+    title: 'Engineering & Developments',
+    image: '/images/official/eNGERING-aND-DEVELOPMEWNT1-600x400.jpg',
+    link: '/services',
+  },
+  {
+    title: 'Petroleum Storage and Retail',
+    image: '/images/official/montagem-de-projetos-mecanicos-thumb-1-2-600x400.jpg',
+    link: '/services',
+  },
+  {
+    title: 'IT & Electronics Supplies',
+    image: '/images/official/fiber-cable-600x400.jpg',
+    link: '/services',
+  },
+]
+
+export const homeStats = [
+  { value: '4', label: 'Offices Worldwide' },
+  { value: '1', label: 'Oil Terminal & Construction' },
+  { value: '150', label: 'Satisfied Employees' },
+  { value: '2', label: 'Awards & Recognitions' },
+]
+
+export const homeCompanies = [
+  {
+    title: 'FAYAKOON ENGINEERING (PVT) LTD',
+    image: '/images/official/company-engineering.jpg',
+    link: '/about',
+  },
+  {
+    title: 'FAYAKOON PETROLEUM (PVT) LTD',
+    image: '/images/official/company-petroleum.jpg',
+    link: '/about',
+  },
+  {
+    title: 'TYME TRADING CONCEPTS (PVT) LTD',
+    image: '/images/official/company-tyme.jpg',
+    link: '/about',
+  },
+]
 
 export const services = [
   {
@@ -110,7 +186,7 @@ export const operations = [
   'Procurement',
   'Flow Line',
   'E & I Works',
-  'Plant Turnaround — Oil & Gas, Petrochemical & Cement',
+  'Plant Turnaround - Oil & Gas, Petrochemical & Cement',
   'Manpower Supply',
   'Equipment Rental Services',
   'Optical Fibre Deployment',
@@ -126,7 +202,7 @@ export const projects = [
     category: 'Fuel Storage',
   },
   {
-    title: 'Housing Scheme — 50 Acre',
+    title: 'Housing Scheme - 50 Acre',
     client: 'Own Development',
     location: 'Sadiqabad',
     year: '2017',
@@ -190,7 +266,7 @@ export const projects = [
     category: 'Supply',
   },
   {
-    title: 'Manpower Supply — Engro Chemical',
+    title: 'Manpower Supply - Engro Chemical',
     client: 'Engro Chemical Pakistan',
     location: 'Daharki',
     year: '1994–1998',
@@ -252,7 +328,7 @@ export const leadership = [
 export const qualityPoints = [
   'Establish and review quality objectives within a structured framework.',
   'Treat quality as a shared responsibility across every level of the organization.',
-  'Fulfill internal and external commitments—on time, every time.',
+  'Fulfill internal and external commitments, on time, every time.',
   'Continuously enhance knowledge, skills, and system efficiency.',
   'Promote collaborative defect prevention and problem-solving.',
   'Plan, implement, and maintain our Quality Management System (QMS).',
@@ -332,7 +408,7 @@ export const fieldVideo = '/images/field/field-video.mp4'
 
 export const fieldImages = Array.from({ length: 78 }, (_, i) => ({
   src: `/images/field/field-${String(i).padStart(3, '0')}.jpg`,
-  alt: `${fieldAlts[i % fieldAlts.length]} — Fayakoon field operations`,
+  alt: `${fieldAlts[i % fieldAlts.length]} - Fayakoon field operations`,
 }))
 
 /** Featured shots for home hero/gallery */
@@ -352,12 +428,18 @@ export const gallery = [
 ]
 
 export const serviceImages = [
-  fieldImages[0],
-  fieldImages[40],
-  fieldImages[20],
-  fieldImages[10],
-  fieldImages[50],
-  fieldImages[30],
+  {
+    src: '/images/official/eNGERING-aND-DEVELOPMEWNT1-600x400.jpg',
+    alt: 'Engineering and developments',
+  },
+  {
+    src: '/images/official/montagem-de-projetos-mecanicos-thumb-1-2-600x400.jpg',
+    alt: 'Petroleum storage and retail',
+  },
+  {
+    src: '/images/official/fiber-cable-600x400.jpg',
+    alt: 'IT and electronics supplies',
+  },
 ]
 
 export const heroImage = fieldImages[40]
