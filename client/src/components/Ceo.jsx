@@ -15,9 +15,9 @@ export default function Ceo() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-bright">
               Leadership
             </p>
-            <h2 className="display mt-3 text-4xl font-bold text-sand sm:text-5xl lg:text-6xl">
+            <h2 className="display heading-safe mt-3 text-3xl font-bold text-sand sm:text-5xl lg:text-6xl">
               Message from the
-              <span className="mt-1 block text-6xl text-sand sm:text-7xl lg:text-8xl">CEO</span>
+              <span className="mt-1 block text-5xl text-sand sm:text-7xl lg:text-8xl">CEO</span>
             </h2>
             <div className="mt-4 h-1 w-24 bg-sand/80" />
             <p className="mt-4 text-lg text-mist/85 sm:text-xl">{ceoMessage.name}</p>

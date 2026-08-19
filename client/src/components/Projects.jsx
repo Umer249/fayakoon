@@ -9,7 +9,7 @@ export default function Projects() {
         <div className="mt-8 grid gap-4 md:hidden">
           {projects.map((p) => (
             <article key={`${p.title}-${p.year}`} className="border border-mist/50 bg-white p-4 shadow-sm">
-              <h3 className="font-semibold text-ink">{p.title}</h3>
+              <h3 className="font-semibold text-ink break-words">{p.title}</h3>
               <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-copper">{p.category}</p>
               <p className="mt-3 text-sm text-steel"><span className="font-semibold text-ink">Client:</span> {p.client}</p>
               <p className="mt-1 text-sm text-steel"><span className="font-semibold text-ink">Location:</span> {p.location}</p>

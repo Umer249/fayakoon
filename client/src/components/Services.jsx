@@ -85,7 +85,9 @@ export default function Services() {
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/25" />
                 <div className="relative flex h-full flex-col justify-end p-6">
                   <span className="display text-3xl text-copper-bright">{service.id}</span>
-                  <h3 className="display mt-2 text-3xl text-sand">{service.title}</h3>
+                  <h3 className="display heading-safe mt-2 text-xl text-sand sm:text-2xl lg:text-3xl">
+                    {service.title}
+                  </h3>
                   <p className="mt-2 text-sm leading-relaxed text-mist/80">{service.desc}</p>
                 </div>
               </motion.article>
@@ -138,7 +140,7 @@ export default function Services() {
                 loading="lazy"
               />
               <div className="absolute inset-x-0 bottom-0 bg-ink/65 px-2 py-1.5">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.08em] text-sand">
+                <p className="heading-safe text-[10px] font-semibold uppercase leading-snug tracking-[0.08em] text-sand">
                   {item.label}
                 </p>
               </div>

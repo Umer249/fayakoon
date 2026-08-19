@@ -11,7 +11,7 @@ export default function HomeCompanies() {
             <article key={company.title} className="overflow-hidden border border-mist/30 bg-white shadow-sm">
               <img src={company.image} alt={company.title} className="h-48 w-full object-cover" />
               <div className="p-5">
-                <h3 className="text-sm font-bold uppercase leading-snug text-ink">{company.title}</h3>
+                <h3 className="heading-safe text-sm font-bold uppercase leading-snug text-ink">{company.title}</h3>
                 <Link to={company.link} className="mt-4 inline-block text-sm font-semibold text-copper hover:text-copper-bright">
                   Read More
                 </Link>

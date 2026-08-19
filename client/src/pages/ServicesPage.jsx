@@ -10,7 +10,7 @@ export default function ServicesPage() {
         <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper">
           Capabilities
         </p>
-        <h1 className="display mt-3 text-5xl font-bold text-ink sm:text-6xl lg:text-7xl">
+        <h1 className="display heading-safe mt-3 text-4xl font-bold text-ink sm:text-6xl lg:text-7xl">
           Services
         </h1>
         <p className="mt-4 max-w-2xl text-steel">

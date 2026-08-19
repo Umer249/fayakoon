@@ -9,7 +9,7 @@ export default function ContactPage() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper">
             Connect
           </p>
-          <h1 className="display mt-3 text-5xl font-bold text-sand sm:text-6xl lg:text-7xl">
+          <h1 className="display heading-safe mt-3 text-4xl font-bold text-sand sm:text-6xl lg:text-7xl">
             Contact
           </h1>
           <p className="mt-4 max-w-2xl text-mist/75">

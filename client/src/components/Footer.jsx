@@ -35,11 +35,11 @@ export default function Footer() {
       <div className="border-t border-mist/20 bg-white py-12">
         <div className="section-pad mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
           <div>
-            <Link to="/" className="inline-block">
+            <Link to="/" className="inline-block max-w-full">
               <img
                 src="/images/brand/fayakoon-logo.png"
-                alt="Fayakoon"
-                className="h-10 w-auto object-contain"
+                alt="Fayakoon Group of Companies"
+                className="logo-fit max-h-10"
               />
             </Link>
             <p className="mt-4 max-w-md text-sm text-steel">{homeAbout}</p>

@@ -17,11 +17,13 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-white text-ink font-sans antialiased;
     min-height: 100vh;
+    overflow-x: hidden;
   }
 
   ::selection {
@@ -43,6 +45,19 @@
     font-family: var(--font-display);
     letter-spacing: 0.01em;
     text-transform: uppercase;
+  }
+
+  .heading-safe {
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  .logo-fit {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: left center;
   }
 
   .grid-lines {

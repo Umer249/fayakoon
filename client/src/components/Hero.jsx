@@ -23,7 +23,7 @@ export default function Hero() {
           <img src={slide.image} alt={slide.title} className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-ink/45" />
           <div className="absolute inset-0 flex items-center justify-center px-4 text-center sm:px-6">
-            <h1 className="display max-w-5xl text-2xl font-bold text-sand sm:text-4xl lg:text-5xl">
+            <h1 className="display heading-safe max-w-5xl text-lg font-bold leading-tight text-sand sm:text-3xl lg:text-5xl">
               {slide.title}
             </h1>
           </div>

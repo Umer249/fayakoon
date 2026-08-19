@@ -55,12 +55,12 @@ export default function Navbar() {
       </div>
 
       <div className="bg-white">
-        <div className="section-pad mx-auto flex max-w-7xl items-center justify-between py-3 lg:py-4">
-          <Link to="/" className="shrink-0">
+        <div className="section-pad mx-auto flex max-w-7xl min-w-0 items-center justify-between gap-3 py-3 lg:py-4">
+          <Link to="/" className="min-w-0 flex-1 overflow-hidden pr-1 lg:flex-none lg:overflow-visible lg:pr-0">
             <img
               src="/images/brand/fayakoon-logo.png"
-              alt="Fayakoon"
-              className="h-9 w-auto object-contain sm:h-10 lg:h-11"
+              alt="Fayakoon Group of Companies"
+              className="logo-fit block max-h-8 sm:max-h-9 lg:max-h-11"
             />
           </Link>
 
@@ -101,12 +101,6 @@ export default function Navbar() {
                 {link.label}
               </NavLink>
             ))}
-            <a
-              href={`mailto:${company.email}`}
-              className="pt-3 text-xs text-steel"
-            >
-              {company.email}
-            </a>
           </div>
         </div>
       )}
