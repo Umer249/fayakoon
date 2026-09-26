@@ -14,7 +14,7 @@ export default function Quality() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper">
               Standards
             </p>
-            <h2 className="display mt-4 text-5xl font-bold text-ink sm:text-6xl">
+            <h2 className="display headline-section mt-4 font-bold text-ink">
               Quality Policy
             </h2>
             <p className="mt-5 text-steel leading-relaxed">
@@ -41,7 +41,7 @@ export default function Quality() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper">
               HSE
             </p>
-            <h2 className="display mt-4 text-5xl font-bold text-ink sm:text-6xl">
+            <h2 className="display heading-safe headline-section mt-4 font-bold text-ink">
               Health, Safety & Environment
             </h2>
             <p className="mt-5 text-steel leading-relaxed">
@@ -56,7 +56,7 @@ export default function Quality() {
                 { title: 'Environment', items: hse.environment },
               ].map((block) => (
                 <div key={block.title} className="border-l border-copper/50 pl-5">
-                  <h3 className="display text-2xl text-ink">{block.title}</h3>
+                  <h3 className="display headline-sub text-ink">{block.title}</h3>
                   <ul className="mt-3 space-y-2">
                     {block.items.map((item) => (
                       <li key={item} className="text-sm text-steel">

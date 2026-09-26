@@ -1,0 +1,8 @@
+engineering=https://unsplash.com/photos/seven-construction-workers-standing-on-white-field-x-ghf9LjrVg
+engineering_cdn=https://images.unsplash.com/photo-1541888946425-d81bb19240f5
+engineering_license=Unsplash License (commercial use allowed)
+trading=https://www.pexels.com/photo/aerial-view-of-communication-tower-in-scenic-landscape-30680947/
+trading_license=Pexels License (commercial use allowed)
+petroleum=https://unsplash.com/photos/a-view-of-an-oil-refinery-at-dusk-3svqKKUUDRY
+petroleum_cdn=https://images.unsplash.com/photo-1722246128616-76c934278e0a
+petroleum_license=Unsplash License (commercial use allowed)

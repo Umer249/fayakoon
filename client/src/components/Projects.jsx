@@ -1,15 +1,23 @@
 import { projects } from '../data/company'
+import Reveal from './Reveal'
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-[#eff3f6] py-16 lg:py-20">
+    <section id="projects" className="bg-[#eff3f6] py-20 lg:py-28">
       <div className="section-pad mx-auto max-w-7xl">
-        <h2 className="display text-3xl font-bold uppercase text-ink sm:text-4xl">Our Projects</h2>
+        <Reveal>
+          <p className="text-sm font-semibold uppercase tracking-[0.32em] text-copper">
+            Delivery record
+          </p>
+          <h2 className="display heading-safe headline-section mt-4 font-bold uppercase text-ink">
+            Selected Engineering Projects
+          </h2>
+        </Reveal>
 
         <div className="mt-8 grid gap-4 md:hidden">
           {projects.map((p) => (
-            <article key={`${p.title}-${p.year}`} className="border border-mist/50 bg-white p-4 shadow-sm">
-              <h3 className="font-semibold text-ink break-words">{p.title}</h3>
+            <article key={`${p.title}-${p.year}`} className="lift-card border border-mist/50 bg-white p-5 shadow-sm">
+              <h3 className="text-lg font-semibold text-ink break-words">{p.title}</h3>
               <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-copper">{p.category}</p>
               <p className="mt-3 text-sm text-steel"><span className="font-semibold text-ink">Client:</span> {p.client}</p>
               <p className="mt-1 text-sm text-steel"><span className="font-semibold text-ink">Location:</span> {p.location}</p>
@@ -32,7 +40,7 @@ export default function Projects() {
             </thead>
             <tbody>
               {projects.map((p) => (
-                <tr key={`${p.title}-${p.year}`} className="border-b border-mist/60">
+                <tr key={`${p.title}-${p.year}`} className="border-b border-mist/60 transition hover:bg-[#f4f7fa]">
                   <td className="px-4 py-4">
                     <div className="font-semibold text-ink">{p.title}</div>
                     <div className="mt-1 text-[10px] uppercase tracking-[0.18em] text-copper">

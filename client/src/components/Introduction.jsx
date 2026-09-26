@@ -14,12 +14,12 @@ export default function Introduction() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper">
             Company
           </p>
-          <h2 className="display mt-4 text-5xl font-bold text-forest sm:text-6xl lg:text-7xl">
+          <h2 className="display headline-section mt-4 font-bold text-forest">
             Introduction
           </h2>
         </motion.div>
 
-        <div className="mt-10 grid gap-12 lg:grid-cols-12 lg:gap-14">
+        <div className="depth-stage mt-10 grid gap-12 lg:grid-cols-12 lg:gap-14">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ export default function Introduction() {
             transition={{ delay: 0.08 }}
             className="lg:col-span-4"
           >
-            <div className="border border-ink/10 bg-white p-6">
+            <div className="depth-card border border-ink/10 bg-white p-6">
               <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-steel">
                 At a glance
               </p>

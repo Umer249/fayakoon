@@ -14,7 +14,7 @@ export default function Mission() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper">
             Purpose
           </p>
-          <h2 className="display mt-4 text-5xl font-bold text-forest sm:text-6xl lg:text-7xl">
+          <h2 className="display headline-section mt-4 font-bold text-forest">
             Our Mission
           </h2>
         </motion.div>
@@ -27,7 +27,7 @@ export default function Mission() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05, duration: 0.45 }}
-              className="grid gap-4 border-l-4 border-copper pl-5 sm:grid-cols-[auto_1fr] sm:gap-8 sm:pl-8"
+              className="depth-card grid gap-4 border-l-4 border-copper bg-white/60 pl-5 sm:grid-cols-[auto_1fr] sm:gap-8 sm:pl-8"
             >
               <span className="display text-3xl text-copper sm:text-4xl">
                 {String(i + 1).padStart(2, '0')}

@@ -35,6 +35,7 @@ export const intro = {
 }
 
 export const ceoMessage = {
+  photo: '/images/uploads/uploads-444.png',
   greeting: 'Greetings,',
   body: [
     'As I reflect on our journey since Fayakoon’s inception in 1994, I feel immense pride in how far we’ve come, and even greater optimism for the future. What began as a small construction startup has grown into a trusted group of companies with a nationwide presence and a strong reputation built on reliability, quality, and client trust.',
@@ -71,18 +72,25 @@ export const mission = [
 export const missionClosing =
   'Through this shared commitment, Fayakoon will not only establish itself as a leading force in its industry but strive to become the defining name across global creative and experiential landscapes.'
 
+// Hero photos, downloaded locally. Commercial use:
+// engineering — Unsplash License, https://unsplash.com/photos/x-ghf9LjrVg
+// trading — Pexels License, https://www.pexels.com/photo/30680947/
+// petroleum — Unsplash License, https://unsplash.com/photos/3svqKKUUDRY
 export const homeSlides = [
   {
-    image: '/images/official/hse-2.jpg',
+    image: '/images/hero/hero-engineering.jpg',
     title: 'FAYAKOON ENGINEERING (PVT) LTD',
+    position: 'center 58%',
   },
   {
-    image: '/images/official/BMS-Pic.jpg',
+    image: '/images/hero/hero-trading.jpg',
     title: 'TYME TRADING CONCEPTS (PVT) LTD',
+    position: 'center center',
   },
   {
-    image: '/images/official/big-pic-oil.jpg',
+    image: '/images/hero/hero-petroleum.jpg',
     title: 'FAYAKOON PETROLEUM (PVT) LTD',
+    position: 'center 22%',
   },
 ]
 
@@ -107,17 +115,17 @@ export const homeAbout =
 export const homeServices = [
   {
     title: 'Engineering & Developments',
-    image: '/images/official/eNGERING-aND-DEVELOPMEWNT1-600x400.jpg',
+    image: '/images/uploads/uploads-234.webp',
     link: '/services',
   },
   {
     title: 'Petroleum Storage and Retail',
-    image: '/images/official/montagem-de-projetos-mecanicos-thumb-1-2-600x400.jpg',
+    image: '/images/uploads/uploads-333.jpeg',
     link: '/services',
   },
   {
     title: 'IT & Electronics Supplies',
-    image: '/images/official/fiber-cable-600x400.jpg',
+    image: '/images/uploads/uploads-111.png',
     link: '/services',
   },
 ]
@@ -132,17 +140,17 @@ export const homeStats = [
 export const homeCompanies = [
   {
     title: 'FAYAKOON ENGINEERING (PVT) LTD',
-    image: '/images/official/company-engineering.jpg',
+    image: '/images/uploads/uploads-123.jpeg',
     link: '/about',
   },
   {
     title: 'FAYAKOON PETROLEUM (PVT) LTD',
-    image: '/images/official/company-petroleum.jpg',
+    image: '/images/uploads/uploads-3334.jpeg',
     link: '/about',
   },
   {
     title: 'TYME TRADING CONCEPTS (PVT) LTD',
-    image: '/images/official/company-tyme.jpg',
+    image: '/images/uploads/uploads-11.png',
     link: '/about',
   },
 ]
@@ -429,17 +437,145 @@ export const gallery = [
 
 export const serviceImages = [
   {
-    src: '/images/official/eNGERING-aND-DEVELOPMEWNT1-600x400.jpg',
+    src: '/images/uploads/uploads-234.webp',
     alt: 'Engineering and developments',
   },
   {
-    src: '/images/official/montagem-de-projetos-mecanicos-thumb-1-2-600x400.jpg',
+    src: '/images/uploads/uploads-333.jpeg',
     alt: 'Petroleum storage and retail',
   },
   {
-    src: '/images/official/fiber-cable-600x400.jpg',
+    src: '/images/uploads/uploads-fiber.jpeg',
     alt: 'IT and electronics supplies',
   },
 ]
 
+export const uploadImages = [
+  { src: '/images/uploads/uploads-222.webp', alt: 'Site team with excavator' },
+  { src: '/images/uploads/uploads-234.webp', alt: 'Rebar inspection on site' },
+  { src: '/images/uploads/uploads-123.jpeg', alt: 'Conduit installation trench works' },
+  { src: '/images/uploads/uploads-12345.png', alt: 'Cable laying machine operations' },
+  { src: '/images/uploads/uploads-fiber.jpeg', alt: 'Fiber optic cable installation' },
+  { src: '/images/uploads/uploads-111.png', alt: 'Cable laying in open trench' },
+  { src: '/images/uploads/uploads-11.png', alt: 'Roadside fiber corridor works' },
+  { src: '/images/uploads/uploads-333.jpeg', alt: 'Fuel storage tank farm' },
+  { src: '/images/uploads/uploads-334.jpeg', alt: 'Petroleum depot infrastructure' },
+  { src: '/images/uploads/uploads-3334.jpeg', alt: 'HSD diesel storage tanks' },
+]
+
 export const heroImage = fieldImages[40]
+
+export const independentProjects = [
+  {
+    id: 'byco-shikarpur',
+    title: 'FAYAKOON-BYCO Oil Terminal Shikarpur',
+    titleAlign: 'right',
+    images: [
+      {
+        src: '/images/independent/byco-canopy.jpg',
+        alt: 'BYCO fuel terminal canopy in Shikarpur',
+      },
+      {
+        src: '/images/independent/byco-wall.jpg',
+        alt: 'Fayakoon signage at BYCO Oil Terminal Shikarpur',
+      },
+    ],
+  },
+  {
+    id: 'palace-inn-daharki',
+    title: 'Fayakoon Palace Inn Guest House Daharki',
+    titleAlign: 'left',
+    titlePosition: 'bottom',
+    images: [
+      {
+        src: '/images/independent/palace-inn-daharki.jpg',
+        alt: 'Fayakoon Palace Inn Guest House exterior in Daharki',
+      },
+    ],
+  },
+  {
+    id: 'verve-lahore',
+    title: 'Verve Salon & Spa Lahore',
+    titleAlign: 'left',
+    images: [
+      {
+        src: '/images/independent/verve-reception.jpg',
+        alt: 'Verve Salon & Spa reception interior in Lahore',
+      },
+      {
+        src: '/images/independent/verve-storefront.jpg',
+        alt: 'Verve Salon & Spa storefront in Lahore',
+      },
+    ],
+  },
+  {
+    id: 'pharmaceutical',
+    title: 'Pharmaceutical Retail and Supply',
+    titleAlign: 'left',
+    images: [
+      {
+        src: '/images/independent/mahmood-pharmacy-exterior.jpg',
+        alt: 'Mahmood Pharmacy night storefront',
+      },
+      {
+        src: '/images/independent/mahmood-pharmacy-interior.jpg',
+        alt: 'Mahmood Pharmacy retail interior',
+      },
+    ],
+  },
+  {
+    id: 'rental-cars',
+    title: 'Rental Cars',
+    titleAlign: 'left',
+    caption: 'Passenger SUVs available for rental.',
+    captionAlign: 'left',
+    images: [
+      {
+        src: '/images/independent/rental-cars-1.jpg',
+        alt: 'White Toyota Prado SUV, front three-quarter view',
+      },
+      {
+        src: '/images/independent/rental-cars-2.jpg',
+        alt: 'White Toyota Prado SUV, rear three-quarter view',
+      },
+    ],
+  },
+]
+
+export const ownedCompanies = [
+  {
+    name: 'Fayakoon Palace Inn',
+    logo: '/images/independent/logos/palace-inn.jpg',
+  },
+  {
+    name: 'Fayakoon Petroleum',
+    logo: '/images/independent/logos/petroleum.jpg',
+  },
+  {
+    name: 'Fayakoon Automobile',
+    logo: '/images/independent/logos/automobile.jpg',
+  },
+  {
+    name: 'Fayakoon Real Estate',
+    logo: '/images/independent/logos/real-estate.jpg',
+  },
+  {
+    name: 'Tyme Trading Concepts',
+    logo: '/images/independent/logos/tyme-trading.jpg',
+  },
+  {
+    name: 'Verve Salon & Spa',
+    logo: '/images/independent/logos/verve.jpg',
+  },
+  {
+    name: 'Fayakoon Engineering (Pvt) Ltd',
+    logo: '/images/independent/logos/engineering.jpg',
+  },
+  {
+    name: 'Mahmood Pharmacy',
+    logo: '/images/independent/logos/mahmood-pharmacy.jpg',
+  },
+]
+
+export const ownedCompaniesCollage =
+  '/images/independent/logos/owned-companies-collage.jpg'

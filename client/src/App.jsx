@@ -6,18 +6,20 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ServicesPage from './pages/ServicesPage'
 import ContactPage from './pages/ContactPage'
+import ProjectsPage from './pages/ProjectsPage'
 
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="relative overflow-x-hidden">
+      <div className="relative">
         <Navbar />
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>

@@ -1,22 +1,38 @@
 import { Link } from 'react-router-dom'
 import { homeCompanies } from '../data/company'
+import Reveal from './Reveal'
 
 export default function HomeCompanies() {
   return (
-    <section className="bg-white py-16 lg:py-20">
+    <section className="bg-white py-20 lg:py-28">
       <div className="section-pad mx-auto max-w-7xl">
-        <h2 className="display text-3xl font-bold uppercase text-ink sm:text-4xl">Our Companies</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {homeCompanies.map((company) => (
-            <article key={company.title} className="overflow-hidden border border-mist/30 bg-white shadow-sm">
-              <img src={company.image} alt={company.title} className="h-48 w-full object-cover" />
-              <div className="p-5">
-                <h3 className="heading-safe text-sm font-bold uppercase leading-snug text-ink">{company.title}</h3>
-                <Link to={company.link} className="mt-4 inline-block text-sm font-semibold text-copper hover:text-copper-bright">
-                  Read More
-                </Link>
-              </div>
-            </article>
+        <Reveal>
+          <h2 className="display headline-section uppercase text-ink">Our Companies</h2>
+        </Reveal>
+        <div className="depth-stage mt-12 grid gap-6 md:grid-cols-3">
+          {homeCompanies.map((company, i) => (
+            <Reveal key={company.title} delay={i * 0.08}>
+              <article className="depth-card h-full overflow-hidden border border-mist/30 bg-white">
+                <div className="overflow-hidden">
+                  <img
+                    src={company.image}
+                    alt={company.title}
+                    className="depth-media h-56 w-full object-cover sm:h-64"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="heading-safe headline-sub uppercase leading-snug text-ink">
+                    {company.title}
+                  </h3>
+                  <Link
+                    to={company.link}
+                    className="mt-5 inline-block text-sm font-semibold uppercase tracking-[0.14em] text-copper hover:text-copper-bright"
+                  >
+                    Read More
+                  </Link>
+                </div>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>

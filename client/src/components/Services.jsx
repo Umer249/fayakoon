@@ -4,50 +4,50 @@ import { services, operations } from '../data/company'
 export default function Services() {
   const serviceImageMap = {
     Dams: {
-      src: '/images/official/hse-2.jpg',
+      src: '/images/uploads/uploads-234.webp',
       alt: 'Dam and civil infrastructure works',
     },
     'Fuel Storage Tanks & Depots': {
-      src: '/images/official/montagem-de-projetos-mecanicos-thumb-1-2-600x400.jpg',
+      src: '/images/uploads/uploads-333.jpeg',
       alt: 'Fuel storage tanks and depot construction',
     },
     'High Rise Buildings': {
-      src: '/images/official/BMS-Pic.jpg',
+      src: '/images/uploads/uploads-222.webp',
       alt: 'High rise and structural development',
     },
     'Mega Canals': {
-      src: '/images/field/field-055.jpg',
+      src: '/images/uploads/uploads-123.jpeg',
       alt: 'Canal and trench civil works',
     },
     'Asphalt Roads': {
-      src: '/images/field/field-067.jpg',
+      src: '/images/uploads/uploads-11.png',
       alt: 'Road and corridor development',
     },
     'Optical Fibre Deployment': {
-      src: '/images/official/fiber-cable-600x400.jpg',
+      src: '/images/uploads/uploads-fiber.jpeg',
       alt: 'Optical fiber deployment works',
     },
   }
 
-  const operationsHeroImage = '/images/official/9010577_orig.jpg'
+  const operationsHeroImage = '/images/uploads/uploads-12345.png'
   const serviceGallery = [
     {
-      src: '/images/official/hse-2.jpg',
+      src: '/images/uploads/uploads-234.webp',
       alt: 'Civil Construction and Flow Line',
       label: 'Civil Construction / Flow Line',
     },
     {
-      src: '/images/official/montagem-de-projetos-mecanicos-thumb-1-2-600x400.jpg',
+      src: '/images/uploads/uploads-3334.jpeg',
       alt: 'Mechanical Fabrication, Plant Turnaround',
       label: 'Mechanical / Plant Turnaround',
     },
     {
-      src: '/images/official/fiber-cable-600x400.jpg',
+      src: '/images/uploads/uploads-111.png',
       alt: 'E and I Works with Optical Fibre Deployment',
       label: 'E & I Works / Optical Fibre',
     },
     {
-      src: '/images/official/BMS-Pic.jpg',
+      src: '/images/uploads/uploads-222.webp',
       alt: 'Procurement, Manpower Supply, Equipment Rental',
       label: 'Procurement / Manpower / Equipment',
     },
@@ -64,7 +64,7 @@ export default function Services() {
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, i) => {
             const img = serviceImageMap[service.title] || {
-              src: '/images/official/9010577_orig.jpg',
+              src: '/images/uploads/uploads-12345.png',
               alt: service.title,
             }
             return (

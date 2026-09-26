@@ -29,7 +29,7 @@ export default function Leadership() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper">
               People
             </p>
-            <h2 className="display mt-4 text-5xl font-bold text-ink sm:text-6xl">
+            <h2 className="display headline-section mt-4 font-bold text-ink">
               Leadership Team
             </h2>
           </div>
@@ -39,7 +39,7 @@ export default function Leadership() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="depth-stage mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {leadership.map((person, i) => (
             <motion.div
               key={person.role}
@@ -47,9 +47,9 @@ export default function Leadership() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.03 }}
-              className="border border-mist/40 bg-white px-5 py-4"
+              className="depth-card border border-mist/40 bg-white px-5 py-5"
             >
-              <h3 className="font-semibold text-ink">{person.role}</h3>
+              <h3 className="text-lg font-semibold text-ink sm:text-xl">{person.role}</h3>
               <p className="mt-2 text-xs uppercase tracking-[0.16em] text-steel">
                 {person.quals} · {person.experience}
               </p>

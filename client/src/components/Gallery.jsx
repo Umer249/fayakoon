@@ -21,12 +21,12 @@ export default function Gallery({
   }, [items, limit, expanded])
 
   return (
-    <section id="gallery" className="section-pad py-20 lg:py-28">
+    <section id="gallery" className="section-pad bg-[#eff3f6] py-20 lg:py-28">
       <div className="mx-auto max-w-7xl">
         <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper">
           {eyebrow}
         </p>
-        <h2 className="display mt-4 text-5xl font-bold text-ink sm:text-6xl">{title}</h2>
+        <h2 className="display headline-section mt-4 font-bold text-ink">{title}</h2>
         <p className="mt-3 max-w-xl text-sm text-steel">
           Documented field operations across fiber corridors, civil trenching, HDD, and
           utility installation.
@@ -48,7 +48,7 @@ export default function Gallery({
         )}
 
         <div
-          className={`mt-10 grid gap-3 ${
+          className={`depth-stage mt-10 grid gap-3 ${
             dense
               ? 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-4'
               : 'grid-cols-2 md:grid-cols-3 md:gap-4'
@@ -63,7 +63,7 @@ export default function Gallery({
               viewport={{ once: true, margin: '-40px' }}
               transition={{ delay: Math.min(i * 0.03, 0.35), duration: 0.45 }}
               onClick={() => setLightbox(item)}
-              className={`group relative overflow-hidden text-left ${
+              className={`lift-card group relative overflow-hidden text-left ${
                 !dense && (i === 0 || i === 3)
                   ? 'md:row-span-2 min-h-[240px] md:min-h-[380px]'
                   : 'min-h-[160px] md:min-h-[200px]'

@@ -6,23 +6,37 @@ export default function Ceo() {
     <section id="ceo" className="relative overflow-hidden border-y border-mist/10">
       <div className="bg-forest">
         <div className="section-pad mx-auto max-w-7xl py-12 sm:py-14 lg:py-16">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-3xl"
-          >
-            <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-bright">
-              Leadership
-            </p>
-            <h2 className="display heading-safe mt-3 text-3xl font-bold text-sand sm:text-5xl lg:text-6xl">
-              Message from the
-              <span className="mt-1 block text-5xl text-sand sm:text-7xl lg:text-8xl">CEO</span>
-            </h2>
-            <div className="mt-4 h-1 w-24 bg-sand/80" />
-            <p className="mt-4 text-lg text-mist/85 sm:text-xl">{ceoMessage.name}</p>
-            <p className="mt-1 text-sm tracking-wide text-steel">{ceoMessage.role}</p>
-          </motion.div>
+          <div className="grid items-center gap-8 lg:grid-cols-12">
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="max-w-3xl lg:col-span-7"
+            >
+              <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-bright">
+                Leadership
+              </p>
+              <h2 className="display heading-safe headline-section mt-3 font-bold text-sand">
+                Message from the
+                <span className="mt-2 block text-[clamp(3.8rem,8.4vw,7.15rem)] leading-[0.88] text-sand">CEO</span>
+              </h2>
+              <div className="mt-4 h-1 w-24 bg-sand/80" />
+              <p className="mt-4 text-lg text-mist/85 sm:text-xl">{ceoMessage.name}</p>
+              <p className="mt-1 text-sm tracking-wide text-steel">{ceoMessage.role}</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="lg:col-span-5"
+            >
+              <img
+                src={ceoMessage.photo}
+                alt={ceoMessage.name}
+                className="mx-auto h-56 w-56 rounded-full object-cover object-top ring-4 ring-sand/30 sm:h-64 sm:w-64 lg:mx-0 lg:h-72 lg:w-72"
+              />
+            </motion.div>
+          </div>
         </div>
       </div>
 
@@ -44,11 +58,11 @@ export default function Ceo() {
             <p className="mt-10 text-sm font-semibold uppercase tracking-[0.2em] text-forest">
               Our continued success is anchored in three core principles
             </p>
-            <div className="mt-6 grid gap-4 sm:grid-cols-3">
+            <div className="depth-stage mt-6 grid gap-4 sm:grid-cols-3">
               {ceoMessage.principles.map((p, i) => (
-                <div key={p.title} className="border border-ink/10 bg-white p-5">
+                <div key={p.title} className="depth-card border border-ink/10 bg-white p-5">
                   <span className="display text-xl text-copper">0{i + 1}</span>
-                  <h3 className="mt-2 font-semibold text-forest">{p.title}</h3>
+                  <h3 className="headline-sub mt-2 font-semibold text-forest">{p.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-ink/70">{p.text}</p>
                 </div>
               ))}
