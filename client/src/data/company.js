@@ -133,7 +133,7 @@ export const homeServices = [
 export const homeStats = [
   { value: '4', label: 'Offices Worldwide' },
   { value: '1', label: 'Oil Terminal & Construction' },
-  { value: '150', label: 'Satisfied Employees' },
+  { value: '65', label: 'Satisfied Employees' },
   { value: '2', label: 'Awards & Recognitions' },
 ]
 
@@ -146,11 +146,6 @@ export const homeCompanies = [
   {
     title: 'FAYAKOON PETROLEUM (PVT) LTD',
     image: '/images/uploads/uploads-3334.jpeg',
-    link: '/about',
-  },
-  {
-    title: 'TYME TRADING CONCEPTS (PVT) LTD',
-    image: '/images/uploads/uploads-11.png',
     link: '/about',
   },
 ]
@@ -468,16 +463,16 @@ export const heroImage = fieldImages[40]
 export const independentProjects = [
   {
     id: 'byco-shikarpur',
-    title: 'FAYAKOON-BYCO Oil Terminal Shikarpur',
+    title: 'Fayakoon Fuel Station',
     titleAlign: 'right',
     images: [
       {
         src: '/images/independent/byco-canopy.jpg',
-        alt: 'BYCO fuel terminal canopy in Shikarpur',
+        alt: 'Fayakoon fuel station canopy',
       },
       {
         src: '/images/independent/byco-wall.jpg',
-        alt: 'Fayakoon signage at BYCO Oil Terminal Shikarpur',
+        alt: 'Fayakoon fuel station signage',
       },
     ],
   },
@@ -514,29 +509,35 @@ export const independentProjects = [
     titleAlign: 'left',
     images: [
       {
-        src: '/images/independent/mahmood-pharmacy-exterior.jpg',
-        alt: 'Mahmood Pharmacy night storefront',
+        src: '/images/independent/pharmacy.jpeg',
+        alt: 'Mahmood Pharmacy storefront at night',
+        fit: 'contain',
+        width: 335,
+        height: 400,
       },
       {
-        src: '/images/independent/mahmood-pharmacy-interior.jpg',
-        alt: 'Mahmood Pharmacy retail interior',
+        src: '/images/independent/pharmacy-2.jpeg',
+        alt: 'Mahmood Pharmacy storefront in daylight',
+        fit: 'contain',
+        width: 425,
+        height: 345,
       },
     ],
   },
   {
-    id: 'rental-cars',
-    title: 'Rental Cars',
+    id: 'fayakoon-autos',
+    title: 'Fayakoon Autos',
     titleAlign: 'left',
-    caption: 'Passenger SUVs available for rental.',
+    caption: 'Import from Japan.',
     captionAlign: 'left',
     images: [
       {
         src: '/images/independent/rental-cars-1.jpg',
-        alt: 'White Toyota Prado SUV, front three-quarter view',
+        alt: 'Fayakoon Autos vehicle, front three-quarter view',
       },
       {
         src: '/images/independent/rental-cars-2.jpg',
-        alt: 'White Toyota Prado SUV, rear three-quarter view',
+        alt: 'Fayakoon Autos vehicle, rear three-quarter view',
       },
     ],
   },

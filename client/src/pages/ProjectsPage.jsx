@@ -9,7 +9,7 @@ export default function ProjectsPage() {
       <IndependentProjects />
 
       <section className="border-t border-mist/30 bg-white py-12 sm:py-14">
-        <div className="section-pad mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
+        <div className="section-pad mx-auto flex max-w-7xl flex-col items-start gap-6">
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-copper">
               Engineering

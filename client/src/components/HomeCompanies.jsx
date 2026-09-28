@@ -9,7 +9,7 @@ export default function HomeCompanies() {
         <Reveal>
           <h2 className="display headline-section uppercase text-ink">Our Companies</h2>
         </Reveal>
-        <div className="depth-stage mt-12 grid gap-6 md:grid-cols-3">
+        <div className="depth-stage mt-12 grid gap-6 md:grid-cols-2">
           {homeCompanies.map((company, i) => (
             <Reveal key={company.title} delay={i * 0.08}>
               <article className="depth-card h-full overflow-hidden border border-mist/30 bg-white">

@@ -23,7 +23,7 @@ export default function IndependentHero() {
             Independent Projects
           </h1>
           <p className="mt-4 max-w-2xl text-white/80">
-            Owned ventures across hospitality, retail, petroleum, trading, and rental cars — built
+            Owned ventures across hospitality, retail, petroleum, trading, and Fayakoon Autos — built
             alongside Fayakoon&apos;s engineering work.
           </p>
         </motion.div>
